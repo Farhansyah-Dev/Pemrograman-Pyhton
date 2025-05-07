@@ -3,4 +3,5 @@ Repositori ini berisikan folder dan file-file pemrograman PYHTON yang bertujuan 
 
 ### Folder & file
 - `folder1` : perkenalan bahasa pemrograman python
-- `folder2` : percabangan python
+- `folder2` : percabangan (if else) python
+- `folder3` : pengulangan (lopping) python
