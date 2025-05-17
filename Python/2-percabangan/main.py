@@ -45,7 +45,16 @@ elif operasi == "/":
 
 else: #else digunakan untuk mengeksekusi kode jika semua kondisi sebelumnya salah
     print("Operasi yang anda masukan tidak valid")
-    
+
+#Program menentukan angka itu positif, negatif atau anka nol
+angka = int(input('Masukan Angka: '))
+
+if angka > 0 :
+    print(f'{angka} adalah bilangan positif')
+elif angka < 0 :
+    print(f'{angka} adalah bilangan negatif')
+else:
+    print(f'{angka} adalah bilangan nol')
 #=========================================================================
 # IF ELSE BERSARANG
 lama_menginap = int(input("Berapa lama menginap?: ")) #input dari user

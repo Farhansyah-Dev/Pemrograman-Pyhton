@@ -15,10 +15,14 @@
 for i in range (1, 11): #inisialisasi
     print(f"Angka ke-{i}") #kondisi
 print("Selesai") #increment/decrement
-# #=========================================================================
 
+#Mencetak Bilangan Ganjil
+for i in range (1,11):
+    if i % 2 != 0:
+        print(i, end=" ")
+        
+    
 # STUDI KASUS MENGHITUNG JUMLAH RATA RATA
-
 # INISIALISASI 
 angka_list = []
 
