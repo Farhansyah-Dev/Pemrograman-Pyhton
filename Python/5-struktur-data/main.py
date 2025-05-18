@@ -12,9 +12,9 @@ for i in range(len(arr)):
     print(f'uruta ke-{i}: {arr[i]}')
     
 #OPERASI DASAR PADA LIST 
-# menambah elemen : menambahkan elemen baru kedalam list
-# menghapus elemen : menghapus elemen tertentu dari list
-# mengakses elemen : mengakses elemen tertentu dari list
+# menambah elemen (.append, .insert) : menambahkan elemen baru kedalam list
+# menghapus elemen (.remove) : menghapus elemen tertentu dari list
+# mengakses elemen (variabel[index] = ): mengakses elemen tertentu dari list
 
 angka = [] #deklarasi list kosong
 
@@ -22,13 +22,17 @@ angka = [] #deklarasi list kosong
 angka.append(1) #menambahkan elemen 1
 angka.append(2) #menambahkan elemen 2
 angka.append(3) #menambahkan elemen 3
+angka.insert(4, 4) #menambahkan elemen 4 di index ke-4
+
+#Note inset memasukan data/elemen ketengah tengah 
+
 
 #menampilkan elemen list
 print (f'Elemen dalam list: {angka}')
 
 #menambah elemen list lagi
-angka.append(5) #menambahkan elemen 4
-print(f'Setelah menambah elemen 4: {angka}')
+angka.append(5) #menambahkan elemen 5
+print(f'Setelah menambah elemen 4: {angka}') #note append akan menambahkan elemen diakhir list
 
 #MENGAKSES ELEMEN LIST
 angka_pertama = angka[0]
