@@ -18,7 +18,7 @@ def start():
         if pilihan_user == monster_posisi:
             print(f'\n {goa_monster}\n\nSelamat {nama_user} kamu berhasil menang! posisi Monster berada di posisi {monster_posisi}') 
         else:
-            print(f'\n{goa_monstter}\n\nMaaf!{nama_user} kamu belum berhasil menang! posisi Monster berada di posisi {monster_posisi}')
+            print(f'\n{goa_monster}\n\nMaaf!{nama_user} kamu belum berhasil menang! posisi Monster berada di posisi {monster_posisi}')
         
         play_again = input(f'\nApakah {nama_user}ingit melanjutkan gamenya lagi? [Yes / NO]:')       
         if play_again == "No":
