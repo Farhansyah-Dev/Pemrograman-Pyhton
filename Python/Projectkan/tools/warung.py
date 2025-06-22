@@ -1,4 +1,5 @@
 import main
+
 def start():
     print('Warung Mini APPS.')
     nama = input('Masukan nama kamu ya: ')
@@ -14,7 +15,6 @@ def start():
         
     elif uang_user > harga:
         print(f'Kembalian {nama} Rp: {uang_user - harga}')
-        main.exit_game()
         main.menu()
         
     else:
