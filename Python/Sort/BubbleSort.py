@@ -27,6 +27,5 @@ print("Elemen Belum Terurut:")
 print(arr)
 
 bubble_sort(arr)
-
 print("Setelah di urutkan Buuble Sort:")
 print(arr)
