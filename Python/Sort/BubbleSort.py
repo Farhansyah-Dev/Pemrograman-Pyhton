@@ -1,31 +1,22 @@
-def bubble_sort(arr):
+# program implementasi BubbleSort
 
-    # Outer loop to iterate through the list n times
-    for n in range(len(arr) - 1, 0, -1):
-        
-        # Initialize swapped to track if any swaps occur
-        swapped = False  
-
-        # Inner loop to compare adjacent elements
-        for i in range(n):
-            if arr[i] > arr[i + 1]:
-
-                # Swap elements if they are in the wrong order
-                arr[i], arr[i + 1] = arr[i + 1], arr[i]
+def bubbleSort (arr): # membuat fungsi Bubblesort
+    panjangArray = len(arr) #Variable panjang data array
+    
+    #Algoritma BubbleSort
+    for putaran in range (panjangArray): # perulangan luar
+        tukarPosisi = False
+        for index in range (0, panjangArray - putaran-1): #Perulangan dalam
+            if (arr[index] > arr[index+1]): #Jika elemen lebih besar dari elemen setelahnya maka tukar posisi
+                arr[index], arr[index+1] = arr[index+1], arr[index]
                 
-                # Mark that a swap has occurred
-                swapped = True
-        
-        # If no swaps occurred, the list is already sorted
-        if not swapped:
+        if (tukarPosisi == True): #Jika tukar posisi dilakukan maka menghentikan bubblesort
             break
-
-
-# Sample list to be sorted
-arr = [40, 30, 22, 8, 18, 10, 71]
-print("Elemen Belum Terurut:")
-print(arr)
-
-bubble_sort(arr)
-print("Setelah di urutkan Buuble Sort:")
-print(arr)
+if __name__ == "__main__": #sintaks python dalam menjalankan code program
+    arr = [78, 14, 81, 9, 10, 1] #Deklarasikan data Array
+    print(f'Data array sebelum di bubble sort: {arr}') #Hasil sebelum di BubbleSort
+    
+    
+    bubbleSort(arr) #Memanggil fungtion BubbleSort
+    print(f'Data array sebelum di bubble sort: {arr}') #Hasil setelah di BubbleSort
+                
